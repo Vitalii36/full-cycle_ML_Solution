@@ -1,0 +1,2 @@
+## License
+Format is MIT
