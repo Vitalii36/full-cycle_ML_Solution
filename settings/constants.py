@@ -1,6 +1,6 @@
 import os
 
-DATA_FOLDER = 'data'
+DATA_FOLDER = 'Data'
 TRAIN_CSV = os.path.join(DATA_FOLDER, 'train.csv')
 VAL_CSV = os.path.join(DATA_FOLDER, 'test.csv')
 
