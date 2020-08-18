@@ -4,9 +4,7 @@ from flask import Flask, request, jsonify, make_response
 import pandas as pd
 import json
 
-
 app = Flask(__name__)
-
 
 @app.route('/predicts', methods=['GET'])
 def predict():
@@ -23,7 +21,7 @@ def predict():
     processed_df = loader.load_data()
 
     predictor = Predictor()
-    response_dict = {'prediction': predictor.predict(processed_df).tolist()}
+    response_dict = {'prediction': (pd.Series(predictor.predict(processed_df)).replace([2, 0 ,1],['ефективна', 'неефективна', 'задовільна'])).tolist()}
 
     return make_response(jsonify(response_dict), 200)
 

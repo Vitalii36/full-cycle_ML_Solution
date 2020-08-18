@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sklearn.preprocessing import MinMaxScaler
 
 class DataLoader(object):
     def fit(self, dataset):
@@ -90,13 +91,17 @@ class DataLoader(object):
 
         self.dataset['amortization_mark'] = self.dataset['amortization_mark'].fillna(0)
 
-        self.dataset['audition_result'] = self.dataset['audition_result'].fillna(0)
-
         self.dataset['audition_result'] = self.dataset['audition_result'].replace(
             ['задовільний', 'позитивний', 'негативний'], [1, 2, 0])
+
+        self.dataset['audition_result'] = self.dataset['audition_result'].fillna(0)
 
         self.dataset['audition_mark'] = self.dataset['audition_mark'].fillna(0)
 
         self.dataset = self.dataset.drop(['company_name', 'company_code', 'company_status'], axis=1)
+
+        scaler = MinMaxScaler()
+        scaler.fit(self.dataset)
+        self.dataset = scaler.transform(self.dataset)
 
         return self.dataset
