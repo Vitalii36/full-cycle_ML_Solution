@@ -18,11 +18,11 @@ March 25. Data for every 3 months.
 Link - https://data.gov.ua/dataset/dfb59d73-9bf1-49c3-b9b9-2760914d2d64
 
 <div align="center">
-    <img align="center" src="https://github.com/Vitalii36/full-cycle_ML_Solution/tree/master/image_readme/Logo.png?raw=true">
+    <img align="center" src="https://github.com/Vitalii36/full-cycle_ML_Solution/blob/master/image_readme/Logo.png?raw=true">
 </div>
 
 <div align="center">
-    <img align="center" src="https://github.com/Vitalii36/full-cycle_ML_Solution/tree/master/image_readme/Table.png?raw=true">
+    <img align="center" src="https://github.com/Vitalii36/full-cycle_ML_Solution/blob/master/image_readme/Table.png?raw=true">
 </div>
 
 ## Solution implementation
@@ -75,7 +75,7 @@ If cloned repo, in the directory run from the terminal app.py, if the docker
 ## Example
 
 <div align="center">
-    <img align="center" src="https://github.com/Vitalii36/full-cycle_ML_Solution/tree/master/image_readme/Example_1.png?raw=true">
+    <img align="center" src="https://github.com/Vitalii36/full-cycle_ML_Solution/blob/master/image_readme/Example_1.png?raw=true">
 </div>
 
 
