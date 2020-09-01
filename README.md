@@ -74,6 +74,8 @@ If cloned repo, in the directory run from the terminal app.py, if the docker
 
 ## Example
 
+As a result, the solution is presented in the form of classification of enterprises into efficient, inefficient, and satisfactory.
+
 <div align="center">
     <img align="center" src="https://github.com/Vitalii36/full-cycle_ML_Solution/blob/master/image_readme/Example_1.png?raw=true">
 </div>
